@@ -6,7 +6,7 @@ services:
     volumes:
       - .:/core
     ports:
-      - 3000:3000
+      - 80:80
     image: app:react
     container_name: react_container
-    command: serve -s start
+    command: serve -s build -l 80
